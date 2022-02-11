@@ -1,0 +1,26 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #F7ECDE;
+}
+
+table td {
+  width: 20%;
+  height: 10vh;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 1rem;
+}
+
+table td:first-child {
+  width: 10%;
+}
+
+table td:last-child {
+    width: 30%;
+}
+
+.off td {
+  background: #eee;
+  color: #ccc;
+}
