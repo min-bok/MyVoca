@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7ECDE;
+}
+
+.title {
+    font-size: 1.438rem;
+}
+
+.menu {
+    position: absolute;
+    right: 0;
+}
+
+.btn {
+    width: 6.25rem;
+    height: 2.188rem;
+    cursor: pointer;
+    margin-right: 1.25rem;
+}
