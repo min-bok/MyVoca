@@ -1,7 +1,6 @@
 import style from '../css/Word.module.css';
 
 function Word() {
-
     return (
         <table>
         <tr className={`${style.wrap}`}>
