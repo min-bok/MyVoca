@@ -12,14 +12,6 @@
   "words": [
     {
       "id": 2,
-      "day": 1,
-      "cn": "book",
-      "pinyin": "bàba",
-      "kor": "책",
-      "isDone": true
-    },
-    {
-      "id": 2,
       "day": 2,
       "cn": "book",
       "pinyin": "bàba",

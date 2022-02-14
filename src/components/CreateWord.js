@@ -1,16 +1,13 @@
 import { useRef } from "react";
 import useFetch from "../hooks/useFetch";
 
+// # 15 6분 42초 useHistory부터 에러남
+
 function CreateWord() {
     const days = useFetch('http://localhost:3001/days');
 
     function onSubmit(e) {
         e.preventDefault();
-
-        console.log(cnRef.current.value);
-        console.log(pinyinRef.current.value);
-        console.log(korRef.current.value);
-        console.log(dayRef.current.value);
 
         fetch(`http://localhost:3001/words/`, {
             method : 'POST',
