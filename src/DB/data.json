@@ -41,6 +41,14 @@
       "pinyin": "bàba",
       "kor": "책",
       "isDone": true
+    },
+    {
+      "day": "2",
+      "cn": "한자",
+      "pinyin": "병음",
+      "kor": "한국어",
+      "isDone": false,
+      "id": 3
     }
   ]
 }

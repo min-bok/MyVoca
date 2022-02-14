@@ -8,7 +8,9 @@ function Header() {
                 <Link to = '/'>HSK 단어장</Link>
             </h1>
             <div className={`${style.menu}`}>
-                <button className={`${style.btn}`}>단어 추가</button>
+                <Link to='/create_word'>
+                    <button className={`${style.btn}`}>단어 추가</button>
+                </Link>
                 <button className={`${style.btn}`}>Day 추가</button>
             </div>
         </div>
