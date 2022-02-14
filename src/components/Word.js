@@ -2,7 +2,8 @@ import style from '../css/Day.module.css'
 import '../css/style.css'
 import { useState } from 'react';
 
-function Word({ word }) {
+function Word({word: w}) {
+    const [word, setWord] = useState(w);
     const [isShow, setIsShow] = useState(false);
     const [isDone, setIsDone] = useState(word.isDone);
 
@@ -11,7 +12,6 @@ function Word({ word }) {
     }
 
     function toggleDone() {
-        // setIsDone(!isDone)
         fetch(`http://localhost:3001/words/${word.id}`, {
             method : 'PUT',
             headers : {
@@ -26,8 +26,27 @@ function Word({ word }) {
             if(res.ok) {
                 setIsDone(!isDone);
             }
-        })
+        });
     }
+
+    function del() {
+        if (window.confirm("삭제 하시겠습니까?")) {
+          fetch(`http://localhost:3001/words/${word.id}`, {
+            method: "DELETE",
+          }).then(res => {
+            if (res.ok) {
+              setWord({
+                ...word,
+                id: 0,
+              });
+            }
+          });
+        }
+      }
+    
+      if (word.id === 0) {
+        return null;
+      }
 
     return(
         <tr className={isDone ? 'off' : ''}>
@@ -46,7 +65,7 @@ function Word({ word }) {
         </td>
         <td>
             <button onClick={toggleShow} className={`${style.meanBtn} ${style.btn}`}>뜻 {isShow ? '숨기기' : '보기'}</button>
-            <button className={`${style.delBtn} ${style.btn}`}>삭제</button>
+            <button className={`${style.delBtn} ${style.btn}`} onClick={del}>삭제</button>
         </td>
     </tr>
     )

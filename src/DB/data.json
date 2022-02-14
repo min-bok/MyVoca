@@ -11,14 +11,6 @@
   ],
   "words": [
     {
-      "id": 1,
-      "day": 1,
-      "cn": "爸爸",
-      "pinyin": "bàba",
-      "kor": "아빠",
-      "isDone": true
-    },
-    {
       "id": 2,
       "day": 1,
       "cn": "book",
@@ -27,20 +19,28 @@
       "isDone": true
     },
     {
-      "id": 3,
+      "id": 2,
       "day": 2,
       "cn": "book",
       "pinyin": "bàba",
-      "kor": "2일치",
-      "isDone": false
+      "kor": "책",
+      "isDone": true
     },
     {
-      "id": 4,
+      "id": 2,
       "day": 2,
       "cn": "book",
       "pinyin": "bàba",
-      "kor": "2일차",
-      "isDone": false
+      "kor": "책",
+      "isDone": true
+    },
+    {
+      "id": 2,
+      "day": 2,
+      "cn": "book",
+      "pinyin": "bàba",
+      "kor": "책",
+      "isDone": true
     }
   ]
 }
