@@ -5,14 +5,20 @@ function Header() {
     return(
         <div className={`${style.header}`}>
             <h1 className={`${style.title}`}>
-                <Link to = '/'>HSK 단어장</Link>
+                <Link to = '/'>마이보카</Link>
             </h1>
             <div className={`${style.menu}`}>
                 <Link to='/create_word'>
-                    <button className={`${style.btn}`}>단어 추가</button>
+                    <div className={`${style.addWord}`}>
+                        <button className={`${style.btn}`}></button>
+                        <p className={`${style.text}`}>단어추가</p>
+                    </div>
                 </Link>
                 <Link to='/create_day'>
-                    <button className={`${style.btn}`}>Day 추가</button>
+                    <div className={`${style.addDay}`}>
+                        <button className={`${style.btn}`}></button>
+                        <p className={`${style.text}`}>Day 추가</p>
+                    </div>
                 </Link>
             </div>
         </div>
