@@ -16,7 +16,7 @@
       "cn": "1일차",
       "pinyin": "bàba",
       "kor": "책",
-      "isDone": true
+      "isDone": false
     },
     {
       "id": 2,
@@ -24,7 +24,7 @@
       "cn": "book",
       "pinyin": "bàba",
       "kor": "책",
-      "isDone": true
+      "isDone": false
     },
     {
       "id": 3,

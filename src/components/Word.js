@@ -1,4 +1,4 @@
-import style from '../css/Day.module.css'
+import style from '../css/Word.module.css'
 import '../css/style.css'
 import { useState } from 'react';
 
