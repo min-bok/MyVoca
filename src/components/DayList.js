@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import useFetch from '../hooks/useFetch';
+import style from '../css/DayList.module.css'
 
 function DayList() {
     const days = useFetch('http://localhost:3001/days');
@@ -7,9 +8,11 @@ function DayList() {
     return (
         <ul>
             {days.map(day => (
-                <li key={day.id}>
-                    <Link to = {`/day/${day.day}`}>Day {day.day}</Link>
-                </li>
+                <Link to = {`/day/${day.day}`}>
+                    <li key={day.id}>
+                        <p>Day {day.day}</p>
+                    </li>
+                </Link>
             ))}
         </ul>
     )

@@ -1,11 +1,17 @@
+@font-face {
+    font-family: 'KOTRAHOPE';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+}
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'KOTRAHOPE';
     text-decoration-line: none;
 }
 
 body {
-    background-color: #FBF8F1;
+    background-color: #fff;
 }
 
 .off td {
