@@ -14,7 +14,11 @@ body {
     background-color: #fff;
 }
 
+ol, ul {
+	list-style: none;
+}
+
 .off td {
     background: #eee;
     color: #ccc;
-  }
+}

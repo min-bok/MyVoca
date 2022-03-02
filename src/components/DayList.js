@@ -6,11 +6,11 @@ function DayList() {
     const days = useFetch('http://localhost:3001/days');
 
     return (
-        <ul>
+        <ul className={`${style.ul}`}>
             {days.map(day => (
                 <Link to = {`/day/${day.day}`}>
-                    <li key={day.id}>
-                        <p>Day {day.day}</p>
+                    <li className={`${style.li}`} key={day.id}>
+                        <p className={`${style.p}`}>Day {day.day}</p>
                     </li>
                 </Link>
             ))}
