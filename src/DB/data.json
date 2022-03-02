@@ -9,38 +9,39 @@
       "day": 2
     }
   ],
+  
   "words": [
     {
-      "id": 2,
-      "day": 2,
-      "cn": "book",
+      "id": 1,
+      "day": 1,
+      "cn": "1일차",
       "pinyin": "bàba",
       "kor": "책",
       "isDone": true
     },
     {
       "id": 2,
-      "day": 2,
+      "day": 1,
       "cn": "book",
       "pinyin": "bàba",
       "kor": "책",
       "isDone": true
     },
     {
-      "id": 2,
+      "id": 3,
       "day": 2,
-      "cn": "book",
+      "cn": "2일차",
       "pinyin": "bàba",
       "kor": "책",
       "isDone": true
     },
     {
-      "day": "2",
+      "id": 4,
+      "day": 2,
       "cn": "한자",
-      "pinyin": "병음",
+      "pinyin": "bàba",
       "kor": "한국어",
-      "isDone": false,
-      "id": 3
+      "isDone": true
     }
   ]
 }

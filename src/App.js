@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route path='/' element={<DayList />}></Route>
         <Route path='/day/:day' element={<Day />}></Route>
-        <Route path='/create_word' element={<CreateWord />}></Route>
+        {/* <Route path='/create_word' element={<CreateWord />}></Route> */}
         <Route path='*' element={<Error />}></Route>
       </Routes>
     </BrowserRouter>
