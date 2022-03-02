@@ -1,34 +1,38 @@
-.wrap {
+/* .wrap {
     border: 1px solid #000;
-}
+} */
 
 .btn {
-    width: 6.25rem;
-    height: 2.188rem;
+    width: 50px;
+    height: 30px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
     margin-right: 0.625rem;
+    font-size: 10px;
 }
 
 .meanBtn {
-    background-color: #E9DAC1;
+  border: 2px solid #FFBBBB;
+  background-color: transparent;
+    /* background-color: #FFBBBB; */
 }
 
 .delBtn{
-    background-color: #f84747;
+    background-color: #FFBBBB;
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
-    background-color: #F7ECDE;
+    /* border: 2px solid #FFBBBB;
+    background-color: rgba(243, 168, 168, 0.3); */
 }
 
 table td {
   width: 20%;
-  height: 10vh;
-  border: 1px solid #ccc;
+  height: 5vh;
+  /* border: 2px solid #FFBBBB; */
   text-align: center;
   font-size: 1rem;
 }
@@ -39,9 +43,4 @@ table td:first-child {
 
 table td:last-child {
     width: 30%;
-}
-
-.off td {
-  background: #eee;
-  color: #ccc;
 }
