@@ -11,7 +11,9 @@ function Header() {
                 <Link to='/create_word'>
                     <button className={`${style.btn}`}>단어 추가</button>
                 </Link>
-                <button className={`${style.btn}`}>Day 추가</button>
+                <Link to='/create_day'>
+                    <button className={`${style.btn}`}>Day 추가</button>
+                </Link>
             </div>
         </div>
     )
