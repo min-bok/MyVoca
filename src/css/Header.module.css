@@ -21,14 +21,14 @@
 }
 
 .title {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #000;
 }
 
 .menu {
     display: flex;
     position: absolute;
-    right: 20px;
+    right: 1.25rem;
 }
 
 .addWord,
@@ -40,12 +40,12 @@
 }
 
 .addWord {
-    margin-right: 20px;
+    margin-right: 1.25rem;
 } 
 
 .btn {
-    width: 25px;
-    height: 25px;
+    width: 1.563rem;
+    height: 1.563rem;
     background-image: url(../img/button.svg);
     background-repeat: no-repeat;
     border: none;
@@ -53,6 +53,6 @@
 }
 
 .text {
-    font-size: 10px;
+    font-size: 0.625rem;
     color: #000;
 }
