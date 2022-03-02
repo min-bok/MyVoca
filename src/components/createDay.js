@@ -1,9 +1,9 @@
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 
 function CreateDay() {
     const days = useFetch('http://localhost:3001/days');
-    const history = useHistory();
+    const navigate = useNavigate
 
     function addDay(e){
         e.preventDefault();
@@ -20,7 +20,7 @@ function CreateDay() {
         .then(res => {
             if(res.ok) {
                 alert('생성이 완료되었습니다!');
-                history.push(`/`)
+                navigate(`/`)
             }
         })
     }
