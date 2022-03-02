@@ -1,6 +1,7 @@
 import Word from '../components/Word'
 import { useParams } from 'react-router-dom'
 import useFetch from '../hooks/useFetch';
+import style from '../css/Day.module.css'
 
 function Day() {
     const day = useParams().day;
@@ -8,7 +9,7 @@ function Day() {
 
     return (
         <>
-        <h2>Day {day}</h2>
+        <h2 className={`${style.day}`}>Day {day}</h2>
         <table>
             <tbody>
                 {words.map(word => (
