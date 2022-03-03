@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import useFetch from "../hooks/useFetch";
+import style from '../css/createWord.module.css'
 
 function CreateWord() {
     const days = useFetch('http://localhost:3001/days');
@@ -33,21 +34,21 @@ function CreateWord() {
     const dayRef = useRef(null);
 
     return(
-        <form onSubmit={onSubmit}>
-            <div>
-                <label>한자</label>
+        <form className={`${style.main}`} onSubmit={onSubmit}>
+            <div className={`${style.wrap}`}>
+                <label className={`${style.label}`}>한자</label>
                 <input type="text" placeholder="computer" ref={cnRef}/>
             </div>
-            <div>
-                <label>병음</label>
+            <div className={`${style.wrap}`}>
+                <label className={`${style.label}`}>병음</label>
                 <input type="text" placeholder="computer" ref={pinyinRef}/>
             </div>
-            <div>
-                <label>한국어</label>
+            <div className={`${style.wrap}`}>
+                <label className={`${style.label}`}>한국어</label>
                 <input type="text" placeholder="computer" ref={korRef}/>
             </div>
-            <div>
-                <label>Day</label>
+            <div className={`${style.wrap}`}>
+                <label className={`${style.label}`}>Day</label>
                 <select ref={dayRef}>
                     {days.map(day => (
                         <option key={day.id} value={day.day}>
@@ -56,7 +57,7 @@ function CreateWord() {
                     ))} 
                 </select>
             </div>
-            <button>저장</button>
+            <button className={`${style.btn}`}>저장</button>
         </form>
     )
 }
