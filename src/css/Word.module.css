@@ -15,7 +15,6 @@
 .meanBtn {
   border: 2px solid #FFBBBB;
   background-color: transparent;
-    /* background-color: #FFBBBB; */
 }
 
 .delBtn{
@@ -25,14 +24,11 @@
 table {
     border-collapse: collapse;
     width: 100%;
-    /* border: 2px solid #FFBBBB;
-    background-color: rgba(243, 168, 168, 0.3); */
 }
 
 table td {
   width: 20%;
   height: 5vh;
-  /* border: 2px solid #FFBBBB; */
   text-align: center;
   font-size: 1rem;
 }

@@ -34,28 +34,30 @@ function CreateWord() {
     const dayRef = useRef(null);
 
     return(
-        <form className={`${style.main}`} onSubmit={onSubmit}>
-            <div className={`${style.wrap}`}>
-                <label className={`${style.label}`}>한자</label>
-                <input type="text" placeholder="computer" ref={cnRef}/>
-            </div>
-            <div className={`${style.wrap}`}>
-                <label className={`${style.label}`}>병음</label>
-                <input type="text" placeholder="computer" ref={pinyinRef}/>
-            </div>
-            <div className={`${style.wrap}`}>
-                <label className={`${style.label}`}>한국어</label>
-                <input type="text" placeholder="computer" ref={korRef}/>
-            </div>
-            <div className={`${style.wrap}`}>
-                <label className={`${style.label}`}>Day</label>
-                <select ref={dayRef}>
-                    {days.map(day => (
-                        <option key={day.id} value={day.day}>
-                            {day.day}
-                        </option>
-                    ))} 
-                </select>
+        <form className={`${style.form}`} onSubmit={onSubmit}>
+            <div className={`${style.labelWrap}`}>
+                <div className={`${style.wrap}`}>
+                    <label className={`${style.label}`}>단어</label>
+                    <input className={`${style.input}`} type="text" placeholder="단어" ref={cnRef}/>
+                </div>
+                <div className={`${style.wrap}`}>
+                    <label className={`${style.label}`}>발음</label>
+                    <input className={`${style.input}`} type="text" placeholder="발음" ref={pinyinRef}/>
+                </div>
+                <div className={`${style.wrap}`}>
+                    <label className={`${style.label}`}>뜻</label>
+                    <input className={`${style.input}`} type="text" placeholder="뜻" ref={korRef}/>
+                </div>
+                <div className={`${style.wrap}`}>
+                    <label className={`${style.label}`}>Day</label>
+                    <select className={`${style.select}`} ref={dayRef}>
+                        {days.map(day => (
+                            <option key={day.id} value={day.day}>
+                                {day.day}
+                            </option>
+                        ))} 
+                    </select>
+                </div>
             </div>
             <button className={`${style.btn}`}>저장</button>
         </form>

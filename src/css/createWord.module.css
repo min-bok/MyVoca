@@ -1,19 +1,48 @@
-.main {
+.form {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.labelWrap {
+    position: relative;
+    width: 180px;
+    /* background-color: palegreen; */
+}
+
 .wrap {
+    display: flex;
     margin-bottom: 1.25rem;
+    align-items: center;
+    height: 30px;
 }
 
 .label {
     margin-right: 1.25rem;
 }
 
+.input {
+    position: absolute;
+    border: none;
+    border-bottom: 2px solid #FFBBBB;
+    right: 0;
+}
+
+.select {
+    margin-left: 18px;
+    border: none;
+}
+
 .btn {
     width: 80vw;
     height: 2.5rem;
+    border: 2px solid #FFBBBB;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #FFBBBB;
 }
