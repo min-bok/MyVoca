@@ -1,0 +1,22 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h3 {
+    margin-bottom: 1.25rem;
+}
+
+.btn {
+    width: 80vw;
+    height: 2.5rem;
+    border: 2px solid #FFBBBB;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #FFBBBB;
+}

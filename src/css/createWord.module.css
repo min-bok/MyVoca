@@ -7,15 +7,14 @@
 
 .labelWrap {
     position: relative;
-    width: 180px;
-    /* background-color: palegreen; */
+    width: 11.25rem;
 }
 
 .wrap {
     display: flex;
     margin-bottom: 1.25rem;
     align-items: center;
-    height: 30px;
+    height: 1.875rem;
 }
 
 .label {
@@ -30,7 +29,7 @@
 }
 
 .select {
-    margin-left: 18px;
+    margin-left: 1.125rem;
     border: none;
 }
 
