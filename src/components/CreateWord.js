@@ -1,8 +1,6 @@
 import { useRef } from "react";
 import useFetch from "../hooks/useFetch";
 
-// # 15 6분 42초 useHistory부터 에러남
-
 function CreateWord() {
     const days = useFetch('http://localhost:3001/days');
 
