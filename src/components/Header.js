@@ -4,9 +4,9 @@ import style from '../css/Header.module.css'
 function Header() {
     return(
         <div className={`${style.header}`}>
-            <h1 className={`${style.title}`}>
-                <Link to = '/'>마이보카</Link>
-            </h1>
+            <Link to = '/'>
+                <h1 className={`${style.title}`}>마이보카</h1>
+            </Link>
             <div className={`${style.menu}`}>
                 <Link to='/create_word'>
                     <div className={`${style.addWord}`}>
