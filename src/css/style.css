@@ -22,3 +22,10 @@ ol, ul {
     background: #eee;
     color: #ccc;
 }
+
+#error {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 24px;
+}
